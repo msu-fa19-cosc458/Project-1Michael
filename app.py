@@ -16,7 +16,7 @@ def index():
     }
     
     #Chooses a random song
-    random_song = random.randint(0,10)
+    random_song = random.randint(0,7)
     response = requests.get(url, headers=my_headers)
     json_body = response.json()
     
@@ -29,7 +29,7 @@ def index():
     twitter_url = "https://api.twitter.com/1.1/search/tweets.json?q=kanyewest"
     
     #Retrieves a random tweet
-    twitter_tweet = random.randint(0,10)
+    twitter_tweet = random.randint(0,7)
     
     #Authorization for the Twitter API
     oauth = requests_oauthlib.OAuth1(
