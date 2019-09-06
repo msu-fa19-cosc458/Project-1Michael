@@ -1,4 +1,4 @@
-# Project-1Michael
+# Project1-mimcd4
 
 Theme: Top 5 Greatest Producers
 I selected this theme because I love the composition of music and all of the art and talent that goes into making music. One of my favorite producers is Kanye West. Next to JDilla, Kanye West is one of the best producers that use samples from different songs. This project focuses on Kanye West, his music, and what's currently being said about him on twitter. 
