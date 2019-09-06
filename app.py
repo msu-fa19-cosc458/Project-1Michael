@@ -16,9 +16,13 @@ def index():
     }
     
     #Chooses a random song
-    random_song = random.randint(0,20)
+    random_song = random.randint(0,14)
     response = requests.get(url, headers=my_headers)
     json_body = response.json()
+    
+    coverart = json_body["response"]["hits"][random_song]["result"]['header_image_url']
+    song = json_body["response"]["hits"][random_song]["result"]["full_title"]
+    artist = json_body["response"]["hits"][random_song]["result"]['primary_artist']['name']
     
     
     #Twitter API to search for tweets
@@ -44,6 +48,9 @@ def index():
     
 
     return flask.render_template("index.html", 
+                                coverart = coverart, 
+                                song = song, 
+                                artist = artist, 
                                 tweets = tweets)
 
 
