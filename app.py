@@ -7,6 +7,20 @@ app = flask.Flask(__name__)
 
 @app.route('/')  
 def index(): 
+    #Genius API search
+    url = "https://api.genius.com/search?q=Kanye%20West"
+    
+    #Genius API Authorization 
+    my_headers = {
+    "Authorization": "Bearer IQdtZyfMUnXQ53F8b9e3y-jWqaNNNRXoVK-aUdbF1crCTkG7S_VCvMrMOD_Nm2FR"
+    }
+    
+    #Chooses a random song
+    random_song = random.randint(0,20)
+    response = requests.get(url, headers=my_headers)
+    json_body = response.json()
+    
+    
     #Twitter API to search for tweets
     twitter_url = "https://api.twitter.com/1.1/search/tweets.json?q=kanyewest"
     
