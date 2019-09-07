@@ -26,10 +26,10 @@ def index():
     
     
     #Twitter API to search for tweets
-    twitter_url = "https://api.twitter.com/1.1/search/tweets.json?q=kanyewest"
+    twitter_url = "https://api.twitter.com/1.1/search/tweets.json?q=kanye%20greatest%20producer"
     
     #Retrieves a random tweet
-    twitter_tweet = random.randint(0,7)
+    twitter_tweet = random.randint(0,9)
     
     #Authorization for the Twitter API
     oauth = requests_oauthlib.OAuth1(
